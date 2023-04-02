@@ -68,7 +68,7 @@ REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001514100377'))
 
 #ai
 AI = is_enabled((environ.get("AI","True")), False)
-OPENAI_API = environ.get("OPENAI_API","")
+OPENAI_API = environ.get("OPENAI_API","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")
 LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","-1001894883002")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 # Requested Content template variables ---
 ADMIN_USRNM = environ.get('ADMIN_USRNM','arunarudra') # WITHOUT @
@@ -84,7 +84,7 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '3e3ea22a23ee
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
 # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 180))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 350))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
